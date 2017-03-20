@@ -22,3 +22,4 @@ clone using follwing command.
 git clone https://github.com/withhari/apple-collector.git
 ```
 
+Or play online @ https://withhari.github.io/apple
