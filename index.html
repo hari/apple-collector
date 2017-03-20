@@ -1,6 +1,61 @@
+<!doctype html>
 <html>
-<head></head>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        #scene {
+            width: 400px;
+            height: 400px;
+            background-color: #aaf;
+            overflow: hidden;
+            margin: 16px auto;
+            position: relative;
+        }
+        
+        #tree {
+            position: absolute;
+            display: block;
+            width: 200px;
+            bottom: 80px;
+            left: 100px;
+        }
+        
+        #ground {
+            position: absolute;
+            display: block;
+            width: 400px;
+            bottom: 0;
+        }
+        
+        .apple {
+            position: absolute;
+            top: 225px;
+            left: 120px;
+            width: 16px;
+            height: auto;
+            transition: top .5s ease;
+        }
+    </style>
+</head>
+
 <body>
-    
+    <div id="scoreboard">
+        Time: <span id="time">30</span> Score: <span id="score">0</span>
+
+        <button onclick="startGame();">Play</button>
+    </div>
+    <div id="scene">
+        <img id="ground" src="ground.png" />
+        <img id="tree" src="tree.png" />
+        <img style="top: 200px ;left: 110px;" onclick="fallDown(this)" class="apple" src="apple.png" />
+        <img style="top: 205px ;left: 145px;" onclick="fallDown(this)" class="apple" src="apple.png" />
+        <img style="top: 170px ;left: 185px;" onclick="fallDown(this)" class="apple" src="apple.png" />
+        <img style="top: 215px ;left: 220px;" onclick="fallDown(this)" class="apple" src="apple.png" />
+        <img style="top: 170px ;left: 255px;" onclick="fallDown(this)" class="apple" src="apple.png" />
+    </div>
+
+    <script type="text/javascript" src="game.js"></script>
 </body>
+
 </html>
