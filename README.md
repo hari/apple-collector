@@ -1,5 +1,8 @@
 # Apple Collector
-A simple game developed during bootcamp for enhancing basic knowledge of JavaScript
+A simple game developed during bootcamp for enhancing basic knowledge of JavaScript.
+
+
+![Apple Collector](screenshot.png?raw=true "Apple Collector")
 
 # Objectives
 The main objectives of developing this game were to:
