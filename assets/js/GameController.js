@@ -1,3 +1,11 @@
+
+/**
+ * If you have completely understood whats going on here in the code then
+ * your next challenge is to recreate this game in Object Oriented Style.
+ * Also you can add some more effects like moving clouds, birds, sounds to game.
+ */
+
+//these are global variables because they need to be accessed by multiple functions.
 var score = 0,
     highScore = 0,
     time = 30,
@@ -72,6 +80,7 @@ function renderScore() {
  * 
  */
 function startGame() {
+    //disable the button to make it unclickable
     btnStart.disabled = "disabled";
     IsPlaying = true;
     renderScore();
@@ -99,13 +108,15 @@ function countDown() {
 }
 
 /**
- * Ends the game by setting IsPlaying to false.
- * Finally resets the score, time and enable btnStart.
+ * Ends the game by setting IsPlaying to false,
+ * finally resets the score, time and enables btnStart.
  */
 function endGame() {
     IsPlaying = false;
     alert("Your score is " + score);
+    //reset score and time for next game.
     score = 0;
     time = 30;
+    //enable the button to make it clickable
     btnStart.removeAttribute('disabled');
 }
