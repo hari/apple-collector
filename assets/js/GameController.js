@@ -20,7 +20,7 @@ var timeBoard = document.getElementById('time'),
  * @param {HTMLElement} apple 
  */
 function fallDown(apple) {
-    if (!(IsPlaying || apple instanceof HTMLElement)) {
+    if (!(IsPlaying && apple instanceof HTMLElement)) {
         return;
     }
     //store the current top position for future refrence.
