@@ -19,7 +19,7 @@ Collect as many apple as you can within 30 seconds.
 clone using follwing command.
 
 ```
-git clone https://github.com/withhari/apple-collector.git
+git clone https://github.com/hari/apple-collector.git
 ```
 
-Or play online @ https://withhari.github.io/apple
+Or play online @ https://hari.github.io/apple
